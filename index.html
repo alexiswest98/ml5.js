@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hand Touch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <!-- Tone.js Library -->
+    <script src="https://unpkg.com/tone"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.1.5/Tone.js" integrity="sha512-5BxJJSpJ8dYoqi271NpnyjYVvd2Eyc7+EmpvZ2vjXK7Fv8UVvWPD4vFxQq0zwEhVfYvPVbv4DskFWBZBm6FaSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  </head>
+
+  <body>
+    <h1>Hand Touch Instrument</h1>
+    
+    <div id="instructions">
+        <h3>How to Play:</h3>
+        <p>Touch your fingertips together to trigger musical notes!</p>
+        
+        <div class="finger-mapping">
+            <strong>Thumb (tip) + Index (tip):</strong> C4 + D4
+        </div>
+        <div class="finger-mapping">
+            <strong>Thumb (tip) + Middle (tip):</strong> C4 + E4
+        </div>
+        <div class="finger-mapping">
+            <strong>Thumb (tip) + Ring (tip):</strong> C4 + F4
+        </div>
+        <div class="finger-mapping">
+            <strong>Thumb (tip) + Pinky (tip):</strong> C4 + G4
+        </div>
+        
+        <p><strong>Tips:</strong></p>
+        <ul>
+            <li>Make sure your hand is visible in the camera frame</li>
+            <li>Try different finger combinations</li>
+            <li>Move your hand closer/further to adjust sensitivity</li>
+        </ul>
+    </div>
+    
+    <button id="start-button" onclick="startTone()">Start Hand Instrument</button>
+    
+    <div id="canvas-container"></div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#start-button {
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-button:hover {
+  background-color: #45a049;
+}
+
+#start-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+#instructions {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.finger-mapping {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #3a3a3a;
+  border-radius: 4px;
+}
+
+#canvas-container {
+  margin: 20px auto;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  display: inline-block;
+}
