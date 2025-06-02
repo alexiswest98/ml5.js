@@ -87,14 +87,14 @@ function startTone() {
 
         const pitchShift = new Tone.PitchShift({
             "pitch": -5,
-            "windowSize": 0.05,
-            "delayTime": 0.2,
-            "feedback": 0.2,
-            "wet": 0.5
+            "windowSize": 0.1,
+            "delayTime": 0,
+            "feedback": 0,
+            "wet": 1
         });
 
-        synth.connect(pitchShift);
-        pitchShift.toDestination();
+        // synth.connect(pitchShift);
+        synth.toDestination();
         
         isAudioReady = true;
         buttonStart.style.display = "none";
